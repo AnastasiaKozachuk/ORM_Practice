@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Options</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style media="screen" type="text/css">
+
+        body {
+
+            background-color: rgba(210, 105, 30, 0.75);
+
+        }
+
+        .footer-button {
+            margin: 50px;
+            width: 300px;
+            height: 70px;
+            font-size: 22px;
+            background-color: #8e7869;
+            color: beige;
+            border: 1px solid beige;
+            outline: none;
+        }
+
+        .footer-button:hover {
+            background-color: #644f43;
+        }
+
+        .footer-button:active {
+            background-color: #907a6c;
+        }
+
+        .input-area {
+            width: 300px !important;
+            height: 50px;
+            display: block;
+            margin: auto;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="container-fluid" style="text-align: center; margin-top: 80px; ">
+
+
+    <div class="row ">
+
+        <form action="/servlet/StudentInfo" method="post" id="getCurrent">
+            <div class="col-xs-12">
+                <input type="text" name="name" class="form-control input-area" placeholder="Student name" form="getCurrent">
+            </div>
+            <div class="col-xs-12">
+                <input type="submit" value="Get info about current" class="footer-button">
+            </div>
+        </form>
+
+    </div>
+    <hr>
+    <div class="row ">
+        <div class="col-xs-12">
+            <form action="/servlet/StudentInfo" method="get" id="getAll">
+                <input type="submit" value="Get info about all" class="footer-button">
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
